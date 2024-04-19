@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/5302d95af0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#myworks">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark"  onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi!, I'm <span>Bharath</span> <br>Reddy from <span>India!.</span></h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/pic1.jpg" alt="Profile photo here......">
+                </div>
+                <div class="about-col-2" style="flex-basis: 60%;">
+                    <div class="about-contents">
+                        <h1 class="sub-title">#About Us</h1>
+                        <p>Recent BSc Computer Science graduate seeking a challenging position as a Software Developer /
+                            Full Stack Developer to leverage my skills in software development.
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                        <div class=" tab-container active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span> <br> Desining web /App interfaces.</li>
+                                <li><span>Web Developement</span> <br> Web app developer.</li>
+                                <li><span>Software development</span><br> Building software applications.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-container" id="experiance">
+                            <ul>
+                                <li><span>UI/UX</span> <br> Desining web /App interfaces.</li>
+                                <li><span>Web Developement</span> <br> Web app developer.</li>
+                                <li><span>Software development</span><br> Building software applications.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-container" id="education">
+                            <ul>
+                                <li><span>UI/UX</span> <br> Desining web /App interfaces.</li>
+                                <li><span>Web Developement</span> <br> Web app developer.</li>
+                                <li><span>Software development</span><br> Building software applications.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <h1 class="sub-title title">#My Services</h1>
+        <div class="container">
+
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius omnis illo recusandae fuga harum?</p>
+                    <a href="#">Learm more....</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius omnis illo recusandae fuga harum?</p>
+                    <a href="#">Learm more....</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Software Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius omnis illo recusandae fuga harum?</p>
+                    <a href="#">Learm more....</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="myworks">
+        <div class="container">
+            <h1 class="sub-title title">#My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/p1.jpg" alt="M<y work image1">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus necessitatibus quos non tenetur porro harum rem fugit architecto dolorem temporibus!</p>
+                            <a href="#">visit here....!</a>
+                        </div>
+                </div>
+                <div class="work">
+                    <img src="./images/p3.jpg" alt="My work image1">
+                    <div class="layer">
+                        <h3>Drum Beate</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus necessitatibus quos non tenetur porro harum rem fugit architecto dolorem temporibus!</p>
+                        <a href="#">visit here....!</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/p2.jpg" alt="M<y work image1">
+                        <div class="layer">
+                            <h3>Mobile Management System</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus necessitatibus quos non tenetur porro harum rem fugit architecto dolorem temporibus!</p>
+                            <a href="#">visit here....!</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more.....!</a>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <h1 class="sub-title title" style="background-image: url(images/contact-banner.jpg);background-position: top; padding: 10px;">#Contact Me</h1>
+            <div class="row">
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-envelope"></i> 1question.ybkr@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> 0987654321</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        
+                    </div>
+                    <a href="#" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your name..">
+                        <input type="email" name="email" placeholder="Your Email..">
+                        <textarea name="message" rows="6" placeholder="Your message here....."></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Crafted with ❤️ by Y.BKReddy  | 2024</p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/5302d95af0.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
